@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro:wght@700&display=swap");
+
+.header {
+    display: flex;
+    padding: 0 12%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #272727;
+    height: 80px;
+}
+.toggleMenuButton {
+    appearance: none;
+    color: transparent;
+    background-color: transparent;
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-image: url(../img/burger_closed.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.toggleMenuButton.toggled {
+    background-image: url(../img/burger_open.svg);
+}
+.navMenu {
+    display: none;
+}
+.navMenu.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    background-color: #f8ea01;
+}
+.navOptionList {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.navOptionListItem {
+    margin: 0 15px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.sectionTitle {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000;
+    text-align: left;
+}
+
+.paragraph {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    text-align: left;
+}
+
+.articleTitle {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.heroSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 50% 70px 12%;
+}
+
+.newsSection {
+    background-color: #ffffff;
+    padding: 110px 12%;
+}
+
+.articleWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.articleItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.articleContentWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.articleItem:last-child {
+    margin-right: 0;
+}
+
+.articleHeader {
+    display: flex;
+    flex-direction: column;
+}
+.newsletterSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 0;
+}
+.newsletterForm {
+    display: flex;
+    align-items: flex-end;
+}
+.newsletterFormControl {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.newsletterFormControlInput {
+    background-color: #fff;
+    border: thin solid #bdbdbd;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 380px;
+    padding: 12px 8px;
+    font-family: Poppins;
+}
+.newsletterFormControlInput::placeholder {
+    color: #cac8c8;
+}
+.submitButton {
+    width: 180px;
+    height: 43px;
+    background-color: #f8ea01;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 3px;
+    margin: 0 20px;
+    border: none;
+    cursor: pointer;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    background-color: #272727;
+    height: 96px;
+}
+
+.moreLink {
+    height: 40px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+    color: #000000;
+    background: #ff63b1;
+    width: 214px;
+    text-decoratnewsletterFormControlInpution: none;
+}
+
+@media (max-width: 720px) {
+    .heroSection {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .newsSection {
+        padding: 30px;
+    }
+    .articleItem {
+        margin: 20px;
+    }
+    .newsletterForm {
+        flex-direction: column;
+        align-items: center;
+    }
+    .newsletterFormControl {
+        margin-bottom: 15px;
+        align-items: center;
+    }
+    .newsletterFormControlInput {
+        width: unset;
+    }
+    .submitButton {
+        width: unset;
+        padding: 10px 20px;
+    }
+    .moreLink {
+        width: unset;
+    }
+}
